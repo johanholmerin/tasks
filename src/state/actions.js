@@ -37,12 +37,13 @@ export async function setSignin(state, signedIn) {
  *  Read lists & tasks
  * ====================
  */
-export async function update({ loading, selectedList, selectedTask }) {
+export async function update({ loading }) {
   if (loading) return;
 
   store.setState({ loading: true });
 
   const { lists, tasks } = await api.getAll();
+  const { selectedList, selectedTask } = store.getState();
   const selectedListExists = selectedList &&
     lists.some(list => list.id === selectedList);
   const selectedTaskExists = selectedTask &&
@@ -120,8 +121,9 @@ export function deleteTask({ tasks, selectedTask }, listId, taskId) {
   };
 }
 
-export async function createTask({ tasks }, listId, task) {
+export async function createTask(state, listId, task) {
   const newTask = await api.createTask(listId, task);
+  const { tasks } = store.getState();
 
   return {
     tasks: [...tasks, newTask]
@@ -162,8 +164,10 @@ export function selectList(state, selectedList) {
   return { selectedList };
 }
 
-export async function createList({ lists }, name) {
+export async function createList(state, name) {
   const newList = await api.createList(name);
+  const { lists } = store.getState();
+
   return {
     lists: [...lists, newList],
     selectedList: newList.id
