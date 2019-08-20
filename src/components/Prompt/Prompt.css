@@ -1,0 +1,103 @@
+.outer {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 24px 16px 16px;
+  min-width: 298px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24);
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 0 8px;
+  font-family: var(--google-font);
+  font-size: 18px;
+  color: #202124;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 0 0 2px;
+  margin: 14px 8px 8px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #3c4043;
+  line-height: 24px;
+  border-width: 0;
+  border-bottom: 1px solid #dadce0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input:focus {
+  outline-style: none;
+  border-bottom-color: #1a73e8;
+  border-bottom-width: 2px;
+  padding-bottom: 1px;
+}
+
+.input::placeholder {
+  font-family: inherit;
+  color: #80868a;
+  font-size: inherit;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 24px;
+}
+
+.button {
+  text-align: center;
+  line-height: 36px;
+  margin: 0 0 0 16px;
+  min-width: 64px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 8px;
+  background-color: transparent;
+  color: #1a73e8;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-width: 0;
+  transition-property: border, box-shadow;
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline-style: none;
+}
+
+.button:focus-visible,
+.button:active {
+  background-color: #e5effc;
+}
+
+.coloredButton {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.coloredButton:focus-visible,
+.coloredButton:active {
+  box-shadow: rgba(26, 115, 232, 0.3) 0px 1px 2px 0px,
+              rgba(26, 115, 232, 0.15) 0px 1px 3px 1px;
+  background-color: #1A73E8;
+}

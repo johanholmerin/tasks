@@ -1,0 +1,27 @@
+.outer {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.wrapper {
+  pointer-events: auto;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.atTop {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

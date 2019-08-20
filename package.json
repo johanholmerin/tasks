@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@use-it/event-listener": "^0.1.3",
+    "body-scroll-lock": "^2.6.4",
+    "date-fns": "^2.0.0-beta.3",
+    "focus-visible": "^5.0.2",
+    "preact": "^10.0.0-rc.1",
+    "unistore": "^3.4.1",
+    "wicg-inert": "^2.1.2"
+  },
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.10.0",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@haensl/rollup-plugin-local-resolve": "^1.0.5",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-classnames": "^0.2.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "postcss-focus-visible": "^4.0.0",
+    "postcss-shorthand-expand": "^1.0.1",
+    "rollup": "^1.19.0",
+    "rollup-plugin-alias": "^1.5.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-cpy": "^2.0.1",
+    "rollup-plugin-delete": "^1.0.0",
+    "rollup-plugin-dss": "git+https://github.com/johanholmerin/rollup-plugin-dss#semver:^0.1.0-beta.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-postcss": "git+https://github.com/johanholmerin/rollup-plugin-postcss#semver:^1.0.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-url": "^2.2.2"
+  },
+  "scripts": {
+    "serve": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "eslint '{src/**/*.{js,jsx},rollup/*.js,*.js}'"
+  }
+}

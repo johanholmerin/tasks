@@ -1,0 +1,157 @@
+.wrapper {
+  padding: 56px 0 44px;
+  margin: 0 20px 0 16px;
+}
+
+.disable {
+  opacity: .5;
+}
+
+.listButton {
+  color: #3771E0;
+}
+
+.title {
+  color: #202123;
+  line-height: 31px;
+  width: 100%;
+  font-size: 24px;
+  font-family: var(--google-font);
+  display: block;
+  font-weight: 500;
+  margin: 7px 0 0 5px;
+  padding: 0 0 19px 0;
+  border-width: 0;
+  background-color: transparent;
+  resize: none;
+}
+
+.disableTitle {
+  text-decoration-line: line-through;
+}
+
+.title:focus {
+  outline-style: none;
+}
+
+.title::placeholder {
+  font-family: var(--google-font);
+  font-weight: 400;
+  color: #81858A;
+}
+
+.row {
+  display: flex;
+}
+
+.notesRow {
+  margin-bottom: 10px;
+}
+
+.dateRow {
+  margin-bottom: 12px;
+}
+
+.notes {
+  color: #202123;
+  line-height: 1.1875em;
+  font-family: inherit;
+  font-size: 16px;
+  flex-grow: 1;
+  font-weight: 400;
+  margin: 3px 0 0 8px;
+  padding: 8px 0;
+  border-width: 0;
+  background-color: transparent;
+  resize: none;
+}
+
+.notes:focus {
+  outline-style: none;
+}
+
+.notes::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  color: #5F6367;
+}
+
+.icon {
+  margin-right: 16px;
+  flex-shrink: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 40px;
+  width: 24px;
+  color: #5F6367;
+}
+
+.subtasks {
+  flex-grow: 1;
+}
+
+.dateButtonWrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.dateButton {
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid #DADCE0;
+  background-color: transparent;
+  font-family: inherit;
+  height: 44px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3771E0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+
+.dateButton:focus {
+  outline-style: none;
+}
+
+.dateButton:focus-visible,
+.dateButton:active {
+  background-color: #F0F0F0;
+}
+
+.clearDate {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: #5F6367;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.clearDate:focus {
+  outline-style: none;
+}
+
+.clearDate:focus-visible,
+.clearDate:active {
+  background-color: #F0F0F0;
+}

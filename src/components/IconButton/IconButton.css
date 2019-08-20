@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: transparent;
+  color: #5F6367;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline-style: none;
+}
+
+.button:focus-visible,
+.button:active {
+  background-color: #F0F0F0;
+}

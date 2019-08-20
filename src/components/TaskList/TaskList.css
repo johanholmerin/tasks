@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 96px;
+  min-height: 100%;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 400;
+  padding-top: 26px;
+  margin: 0 0 12px 57px;
+  font-family: var(--google-font);
+}
+
+.tasks {
+  border-bottom: 1px solid #E8EAED;
+}
+
+.doneWrapper {
+  padding: 28px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.doneImage {
+  width: 245px;
+  height: 187px;
+  object-fit: contain;
+}
+
+.doneTitle {
+  margin-top: 24px;
+  font-family: var(--google-font);
+  font-weight: 500;
+  font-size: 16px;
+  color: #202123;
+}
+
+.doneText {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #5F6367;
+}

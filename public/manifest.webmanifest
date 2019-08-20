@@ -1,0 +1,13 @@
+{
+  "name": "Tasks",
+  "short_name": "Tasks",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [{
+    "src": "product_logo_tasks_color_768.png",
+    "sizes": "768x768",
+    "type": "image/png"
+  }]
+}

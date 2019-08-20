@@ -1,0 +1,9 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #5F6367;
+}

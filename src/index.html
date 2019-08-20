@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#fff" />
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <style>
+    *, :before, :after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    /* Safari triggers :active on disabled inputs and buttons */
+    [disabled] {
+      pointer-events: none;
+    }
+
+    /* Remove Firefox focus border */
+    ::-moz-focus-inner {
+      border: 0;
+    }
+
+    html, body, #root {
+      --native-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+                     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+                     "Helvetica Neue", sans-serif;
+      --google-font: "Google Sans", var(--native-font);
+      height: 100%;
+      margin: 0;
+      font-family: var(--native-font);
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smooth: antialiased;
+    }
+
+    .error {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      line-height: 100vh;
+      text-align: center;
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,500&display=swap"
+    media="print"
+    onload="this.media='all'"
+  >
+
+  <link rel="preconnect" href="https://ssl.gstatic.com">
+  <link rel="preconnect" href="https://accounts.google.com">
+  <link rel="preconnect" href="https://content.googleapis.com">
+  <script src="https://apis.google.com/js/api.js" defer></script>
+</head>
+<body>
+  <noscript class="error">Enable JavaScript</noscript>
+  <div id="not-supported" class="error hide">Browser not supported</div>
+  <div id="load-fail" class="error hide">Failed to load</div>
+
+  <div id="portal"></div>
+  <div id="root"></div>
+
+  <script nomodule>
+    // Safari 10.1 supports modules but does not support nomodule
+    if (!/\s+Version\/10\.1(?:\.\d+)?\s+Safari\//.test(navigator.userAgent)) {
+      document.getElementById('not-supported').className = 'error';
+    }
+  </script>
+  <script>
+    // Enable :active for iOS
+    document.addEventListener('touchstart', function() {}, false);
+  </script>
+</body>
+</html>

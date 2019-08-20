@@ -1,0 +1,129 @@
+.wrapper {
+  line-height: 19px;
+  border-bottom-color: #E8EAED;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.wrapper:last-child {
+  border-bottom-width: 0;
+}
+
+.task {
+  padding-right: 30px;
+  padding-left: 58px;
+  color: #202123;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  min-height: 51px;
+  position: relative;
+}
+
+.taskCompleted {
+  text-decoration-line: line-through;
+}
+
+.subtask {
+  padding-left: 92px;
+  position: relative;
+}
+
+.subtaskLine {
+  content: "";
+  height: 1px;
+  background-color: #E8EAED;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 58px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: 1;
+  transform: translate(3px, -1px);
+  left: 0;
+  top: 0;
+  /* Offset vertically by a maximum of 10px when larger than normal height */
+  /* Currently only supported in Safari */
+  /* https://bugzilla.mozilla.org/show_bug.cgi?id=1519519 */
+  /* https://bugs.chromium.org/p/chromium/issues/detail?id=825895 */
+  top: min(10px, calc(100% - 51px));
+}
+
+.subCheckbox {
+  left: 34px;
+}
+
+.title {
+  margin-top: 16px;
+  min-height: 19px;
+  margin-bottom: 2px;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.title:focus {
+  outline-style: none;
+}
+
+.title:focus-visible,
+.title:active {
+  --focused-color: #F0F0F0;
+}
+
+.titleText {
+  position: relative;
+  z-index: 1;
+}
+
+.titleFocus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--focused-color, transparent);
+}
+
+.notes {
+  color: #5F6367;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 4px;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.link {
+  text-decoration-line: none;
+  color: #3478F6;
+  pointer-events: auto;
+}
+
+.link:focus {
+  outline-style: none;
+  text-decoration-line: underline;
+}
+
+.content {
+  margin-bottom: 14px;
+}

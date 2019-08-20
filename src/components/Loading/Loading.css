@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+  margin-bottom: -5px;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+  color: #202123;
+}
+
+.svg {
+  height: 100%;
+  width: 100%;
+  animation-name: loading-bar-rotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-bar-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  animation-name: loading-bar-dash;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  stroke-dasharray: 2.08%, 416%;
+  stroke-dashoffset: 0;
+  transition-property: stroke-dasharray;
+  transition-duration: .35s;
+  transition-timing-function: cubic-bezier(.4, 0, .2,1);
+  fill: none;
+  stroke-linecap: round;
+  stroke-miterlimit: 20;
+  stroke-width: .15rem;
+  stroke: currentColor;
+  transform-origin: 0px 0px;
+}
+
+@keyframes loading-bar-dash {
+  0% {
+    stroke-dasharray: 2.08%, 416%;
+    stroke-dashoffset: 0%;
+  }
+  50% {
+    stroke-dasharray: 185.4%, 416%;
+    stroke-dashoffset: -72.9%;
+  }
+  to {
+    stroke-dasharray: 185.4%, 416%;
+    stroke-dashoffset: -258.33%;
+  }
+}

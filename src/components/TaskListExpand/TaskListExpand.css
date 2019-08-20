@@ -1,0 +1,48 @@
+.button {
+  height: 58px;
+  line-height: 19px;
+  border-top: 1px solid #E8EAED;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  padding: 0 16px 0 24px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right-width: 0;
+  border-left-width: 0;
+  font-family: var(--google-font);
+  font-size: inherit;
+  width: 100%;
+  font-weight: 500;
+  color: #202123;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline-style: none;
+}
+
+.button:focus-visible,
+.button:active {
+  background-color: #F0F0F0;
+}
+
+.title {
+  margin-top: 3px;
+}
+
+.icon {
+  will-change: transform;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  fill: #5F6367;
+  transform-origin: center;
+}
+
+.iconExpanded {
+  transform: rotateX(180deg);
+}

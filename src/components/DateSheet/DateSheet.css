@@ -1,0 +1,142 @@
+.header {
+  padding: 6px 8px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+  font-family: var(--google-font);
+  font-weight: 500;
+  font-size: 16px;
+  color: #202123;
+}
+
+.grow {
+  flex-grow: 1;
+  flex-basis: 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.done {
+  color: #3771E0;
+  font-size: 14px;
+  height: 36px;
+}
+
+.done:focus-visible,
+.done:active {
+  background-color: #E5EEFB;
+}
+
+.months {
+  position: relative;
+}
+
+.monthButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5F6367;
+  margin: 0;
+  padding: 0 8px;
+  border-width: 0;
+  background-color: transparent;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+
+.monthButton:focus {
+  outline-style: none;
+}
+
+.monthButton:focus-visible,
+.monthButton:active {
+  background-color: #F7F7F7;
+}
+
+.monthButtonRight {
+  left: auto;
+  right: 0;
+}
+
+.month {
+  padding: 0 9px 8px;
+}
+
+.monthTitle {
+  line-height: 62px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.heading {
+  text-align: center;
+  color: #202123;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  padding: 6px 0 1px;
+}
+
+.td {
+  padding: 0;
+}
+
+.date {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  --size: 30px;
+  height: var(--size);
+  width: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  color: #202123;
+  font-size: 12px;
+  font-weight: 500;
+  border-width: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.date:focus {
+  outline-style: none;
+}
+
+.date:focus-visible,
+.date:active {
+  background-color: #5383EC;
+}
+
+.today {
+  color: #5383EC;
+}
+
+.today:focus-visible,
+.today:active {
+  color: #202123;
+}
+
+.selected {
+  background-color: #5383EC;
+  color: #fff;
+}

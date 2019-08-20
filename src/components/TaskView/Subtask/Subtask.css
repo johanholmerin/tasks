@@ -1,0 +1,67 @@
+.subtask {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox {
+  transform: translate(-7.5px, -6px);
+}
+
+.title {
+  color: #202123;
+  line-height: 1.1875em;
+  font-family: inherit;
+  font-size: 16px;
+  flex-grow: 1;
+  font-weight: 400;
+  margin: 3px 0 0 -11px;
+  padding: 8px 48px 8px 1px;
+  border-width: 0;
+  background-color: transparent;
+  resize: none;
+}
+
+.title:focus {
+  outline-style: none;
+}
+
+.title::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  color: #5F6367;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 1.5px;
+  right: 0;
+  color: #5F6367;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  background-color: transparent;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.deleteButton:focus {
+  outline-style: none;
+}
+
+.deleteButton:focus-visible,
+.deleteButton:active {
+  background-color: #F0F0F0;
+}
+
+.hide {
+  display: none;
+}
