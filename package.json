@@ -4,7 +4,7 @@
     "body-scroll-lock": "^2.6.4",
     "date-fns": "^2.0.0-beta.3",
     "focus-visible": "^5.0.2",
-    "preact": "^10.0.0-rc.1",
+    "preact": "^10.0.0",
     "unistore": "^3.4.1",
     "wicg-inert": "^2.1.2"
   },
